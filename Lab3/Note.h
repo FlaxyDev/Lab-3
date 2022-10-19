@@ -69,10 +69,6 @@ public:
 	}
 	friend bool operator==(const Note& ltemp, const Note& rtemp)
 	{
-		cout << "LTEMP: " << endl;
-		cout << ltemp << endl;
-		cout << "RTEMP: " << endl;
-		cout << rtemp << endl;
 		if (ltemp.firstname == rtemp.firstname && ltemp.lastname == rtemp.lastname && ltemp.number == rtemp.number && ltemp.date.day == rtemp.date.day && ltemp.date.month == rtemp.date.month && ltemp.date.years == rtemp.date.years)
 		{
 			return true;
