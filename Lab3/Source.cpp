@@ -7,6 +7,7 @@ int main()
 	SetConsoleOutputCP(1251);
 	Notebook t1;
 	cin >> t1;
+	cout << "До сортування: " << endl;
 	cout << t1;
 	t1.Sort();
 	cout << "Після сортування: "<< endl;
