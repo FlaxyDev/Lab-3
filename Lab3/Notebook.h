@@ -18,11 +18,17 @@ public:
 	void SearchDate();
 	friend ostream& operator<<(ostream& os, const Notebook& temp)
 	{
-		for (int i = 0; i < temp.Notes.size(); i++)
+		if (temp.Notes.size() == 0)
 		{
-			os << temp.Notes[i] << endl;
+			os << "Записник пустий!" << endl;
 		}
-		
+		else
+		{
+			for (int i = 0; i < temp.Notes.size(); i++)
+			{
+				os << temp.Notes[i] << endl;
+			}
+		}	
 		return os;
 	}
 	friend istream& operator >>(istream& is, Notebook& temp)

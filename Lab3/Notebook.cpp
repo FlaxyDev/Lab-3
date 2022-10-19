@@ -29,15 +29,8 @@ Notebook Notebook::operator-(const Notebook& rtemp)
 			if (temp.Notes[i] == rtemp.Notes[j])
 			{
 				temp.Notes.erase(temp.Notes.begin() + i);
-				if (i != 0)
-				{
-					i--;
-					break;
-				}
-				else 
-				{
-					i = 0;
-				}
+				i--;
+				break;
 			}
 		}
 	}
